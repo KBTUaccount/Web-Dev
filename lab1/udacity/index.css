@@ -1,0 +1,35 @@
+
+/*Comment for css*/
+p{
+    color:crimson;
+    font-weight: bold;
+    font-style: italic;
+    text-transform:capitalize;
+    text-decoration: underline;
+}
+.upper-list{
+    color:blueviolet;
+}
+#first-list-part{
+    color: brown;
+}
+.block1{
+    width: 100px;
+}
+.block2{
+    height: 200px;
+    background-color: rgb(0,0,255);
+}
+.block3{
+    margin: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.block4{
+    font-size: 2em;
+}
+.amogus{
+    border: solid;
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 30px;
+}
+
