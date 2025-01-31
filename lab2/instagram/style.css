@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.image-container {
+    align-items: center;
+}
+.phone-image1 {
+    position: relative;
+    margin-left: 2px;
+    border-radius: 30px;
+    border: black;
+    border-style:solid;
+    border-width: 7px;
+}
+.phone-image2 {
+    position: relative;
+    top: 30px;
+    right: 90px;
+    border-radius: 30px;
+    border: black;
+    border-style:solid;
+    border-width: 7px;
+}
+.content {
+    display: grid;
+    gap: 10px;
+}
+.login-box {
+    display: grid;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.login-box input {
+    width: 310px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #f1f1f19f;
+}
+.login-box button {
+    color: #FFFFFF;
+    background-color: #177af24d;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.login-box input:focus {
+    box-shadow: 0 0 2px #1778F2;
+    border: 1px solid #1778F2;
+}
+.instagram-logo {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.or-text {
+    font-weight: 600;
+    color: #818181;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.facebook-login a {
+    font-weight: bold;
+    color: #385185;
+}
+.register-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-box a {
+    font-weight: bold;
+    color: #1778F2;
+}
+.download-app {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 70px;
+    padding-bottom: 30px;
+}
+.footer p, .footer p a {
+    font-size: 12px;
+    color: #818181;
+}
+.forgot-password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
