@@ -1,0 +1,97 @@
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.image-gallery img {
+  width: 80px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star {
+  color: #ff9800;
+  font-size: 1rem;
+  margin: 0 2px;
+}
+.rating-value {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.actions button {
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+.actions button:hover {
+  background: #0056b3;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.share-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.share-btn.whatsapp {
+  background: #25d366;
+}
+.share-btn.telegram {
+  background: #0088cc;
+}
+.share-btn:hover {
+  opacity: 0.9;
+}

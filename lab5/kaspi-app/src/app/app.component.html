@@ -1,0 +1,25 @@
+<header class="kaspi-header">
+  <div class="container">
+    <a href="#" class="brand">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kaspi.kz_logo.svg/120px-Kaspi.kz_logo.svg.png"
+           alt="Kaspi.kz" class="logo">
+      <span class="brand-text">Kaspi Marketplace</span>
+    </a>
+  </div>
+</header>
+
+<div class="container main-content">
+  <h1>Categories</h1>
+  <ul class="categories">
+    <li *ngFor="let category of categories"
+        (click)="selectCategory(category)"
+        [class.active]="selectedCategory === category">
+      {{ category.name }}
+    </li>
+  </ul>
+
+  <div *ngIf="selectedCategory">
+    <h2>{{ selectedCategory.name }} Products</h2>
+    <app-product-list [products]="selectedCategory.products" (removeProduct)="removeProduct($event)"></app-product-list>
+  </div>
+</div>

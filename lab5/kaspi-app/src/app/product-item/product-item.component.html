@@ -1,0 +1,22 @@
+<div class="product-card">
+  <div class="image-gallery">
+    <img *ngFor="let img of product.images" [src]="img" alt="Product image">
+  </div>
+  <h3 class="product-name">{{ product.name }}</h3>
+  <p class="product-description">{{ product.description }}</p>
+  <div class="rating">
+    <span class="rating-value">{{ product.rating }}/5</span>
+  </div>
+  <div class="actions">
+    <button class="like-btn" (click)="likeProduct()">Like ({{ product.likes }})</button>
+    <button class="remove-btn" (click)="removeProduct()">Remove</button>
+  </div>
+  <div class="share-buttons">
+    <button class="share-btn whatsapp" (click)="shareWhatsApp(product.kaspiLink)">
+      <i class="fab fa-whatsapp"></i> Whatsapp
+    </button>
+    <button class="share-btn telegram" (click)="shareTelegram(product.kaspiLink)">
+      <i class="fab fa-telegram"></i> Telegram
+    </button>
+  </div>
+</div>
