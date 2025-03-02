@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <a routerLink="/home" class="nav-link">Home</a>
+    <a routerLink="/albums" class="nav-link">Albums</a>
+    <a routerLink="/about" class="nav-link">About</a>
+  </nav>
+  <div class="container" *ngIf="album">
+    <h1>Album Detail</h1>
+    <div class="detail-info">
+      <p><strong>ID:</strong> {{ album.id }}</p>
+      <p><strong>User ID:</strong> {{ album.userId }}</p>
+      <p>
+        <strong>Title:</strong>
+        <input [(ngModel)]="album.title" class="title-input" />
+      </p>
+    </div>
+    <div class="actions">
+      <button (click)="saveAlbum()">Save</button>
+      <button (click)="returnToAlbums()">Return</button>
+      <a [routerLink]="['/albums', album.id, 'photos']" class="photos-link">Photos</a>
+    </div>
+  </div>

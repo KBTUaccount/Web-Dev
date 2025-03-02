@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <a routerLink="/home" class="nav-link">Home</a>
+    <a routerLink="/albums" class="nav-link">Albums</a>
+    <a routerLink="/about" class="nav-link">About</a>
+  </nav>
+  <div class="container">
+    <h1>Album Photos</h1>
+    <div class="photos-grid">
+      <div *ngFor="let photo of photos" class="photo-card">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+        <p>{{ photo.title }}</p>
+      </div>
+    </div>
+    <button (click)="returnToAlbum()">Return</button>
+  </div>
+  
