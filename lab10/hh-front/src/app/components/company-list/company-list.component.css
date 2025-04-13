@@ -1,0 +1,40 @@
+/* Title */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* List of companies */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  li:hover {
+    background-color: #d0e7ff;
+  }
+  
+  /* Vacancies Section */
+  h3 {
+    margin-top: 30px;
+    color: #34495e;
+  }
+  
+  strong {
+    color: #2980b9;
+  }
+  
+  p {
+    color: #666;
+  }
+  
